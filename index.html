@@ -21,7 +21,7 @@
         <nav>
           <ul class="Top-Nav">
             <li class="active">
-              <a href="index.html" >Studio</a>
+              <a href="index.html">Studio</a>
             </li>
             <li>
               <a href="portofolio.html">Portofolio</a>
@@ -43,8 +43,10 @@
           <div class="container">
             <div class="page-title-section">
               <h1>Effective Solutions for Your Business</h1>
-              <div class=" order-button" >
-                <button type="button" class="order" data-modal-open >Order Service</button>
+              <div class="order-button">
+                <button type="button" class="order" data-modal-open>
+                  Order Service
+                </button>
               </div>
             </div>
           </div>
@@ -57,9 +59,84 @@
             <svg class="close-icon">
               <use href="./images/icons.svg.svg#icon-close"></use>
             </svg>
-          </button>         
-        </div>
+          </button>
+          <div class="modal-title-container">
+            <h3 class="modal-title">
+              Leave your contacts and we will call you back
+            </h3>
+          </div>
+          <form name="contacts-form" class="modal-form">
+            <label for="user_name">
+              <span>Name</span>
+              <input
+                type="text"
+                name="name"
+                id="user_name"
+                class="focus-within-input"
+              />
+              <svg class="icon-name-modal">
+                <use href="./images/icons.svg.svg#icon-name-modal"></use>
+              </svg>
+            </label>
 
+            <label for="user_phone">
+              <span>Phone</span>
+              <input
+                type="tel"
+                name="phone"
+                id="user_phone"
+                class="focus-within-input"
+              />
+              <svg class="icon-name-modal">
+                <use href="./images/icons.svg.svg#icon-phone-modal"></use>
+              </svg>
+            </label>
+            <label for="user_email">
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                id="user_email"
+                class="focus-within-input"
+              />
+              <svg class="icon-name-modal">
+                <use href="./images/icons.svg.svg#icon-email-modal"></use>
+              </svg>
+            </label>
+            <label for="comment"></label>
+            <span>Comment</span>
+            <textarea
+              id="comment"
+              placeholder="Text input"
+              name="Comment"
+              cols="5"
+              rows="5"
+            ></textarea>
+            <div class="checkbox-label">
+              <label>
+                <input
+                  type="checkbox"
+                  name="agree"
+                  value="agree"
+                  class="checkmark"
+                  required
+                />
+                <svg class="checkbox-icon">
+                  <use href="./images/icons.svg.svg#checkbox"></use>
+                </svg>
+
+                <p>
+                  I accept the terms and conditions of the
+                  <span class="privacy-policy">
+                    <a href="Privacy-policy.html">Privacy Policy</a>
+                  </span>
+                </p>
+              </label>
+            </div>
+
+            <button type="submit" class="modal-send-button">Send</button>
+          </form>
+        </div>
       </div>
       <!-- Section 1-->
       <section class="section">
@@ -157,7 +234,7 @@
       </section>
 
       <!--Section 3-->
-      <section class=" section section-team">
+      <section class="section section-team">
         <div class="Team-container">
           <div class="container">
             <h2 class="team-title-container">Our Team</h2>
@@ -211,7 +288,7 @@
                     </a>
                   </div>
                 </li>
-                <li class="team-card" >
+                <li class="team-card">
                   <img
                     src="./images/Tom-Ford.jpg"
                     alt="Tom-photo"
@@ -399,8 +476,8 @@
           digital marketing & growth solutions.
         </p>
       </div>
-      <div>
-        <h3 class="footer-social-media">Social Media</h3>
+      <div class="social-media-footer">
+        <h3 class="footer-social-media-title">Social Media</h3>
         <div class="social-icons-list">
           <a
             href="https://www.instagram.com/"
@@ -439,6 +516,25 @@
             </svg>
           </a>
         </div>
+      </div>
+
+      <form class="footer-form">
+        <label class="footer-label">
+          Subscribe
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail "
+            class="footer-input"
+          />
+        </label>
+        <button class="footer-label-button" type="submit">
+          Subscribe
+          <svg>
+            <use href="./images/icons.svg.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </form>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
