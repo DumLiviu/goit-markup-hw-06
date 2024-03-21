@@ -35,7 +35,7 @@
   width: 261px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
+  color:#212121;
   margin-left: 76px;
   margin-right: 270px;
   display: flex;
@@ -43,12 +43,21 @@
   list-style: none;
   text-decoration: none;
 }
-
+.Top-Nav a{
+  color: #212121;
+}
+.active-page{
+  color: var(--ocean);
+}
 .active {
   position: relative;
   text-decoration: underline var(--ocean) 4px;
-  text-underline-offset: 28px;
-}
+  text-underline-offset: 28px;}
+
+  address a{
+    color: #212121;
+  }
+  
 
 .section {
   display: flex;
@@ -60,8 +69,11 @@
 .container {
   width: 1200px;
 }
-
-.contacts-top a:hover,
+.contacts-top{
+  display: flex;
+ gap: 40px; 
+ color: #212121;
+}.contacts-top a:hover,
 .contacts-top a:focus {
   color: red;
   transition: var(--transition);
@@ -149,6 +161,10 @@
   height: 40px;
   outline: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+}
+.footer-input:focus{
+  background-color: transparent;
 }
 .footer-label > input::placeholder {
   font-family: var(--font-family);
@@ -159,7 +175,6 @@
   color: #fff;
   width: 36px;
   height: 24px;
-
 }
 .footer-label-button {
   display: flex;
@@ -266,6 +281,7 @@
   color: #fff;
 }
 .order-button {
+  
   box-shadow: 0 4px 4px 0 rgb(0 0 0 15%);
   outline: none;
 }
@@ -273,6 +289,9 @@
   background-color: transparent;
   color: #fff;
   outline: none;
+  width: 169px;
+    height: 59px;
+    border-radius: 4px;
 }
 
 .order-button button:hover,
@@ -640,22 +659,21 @@
   appearance: none;
   position: absolute;
   border: none;
-   }
-  .checkmark:focus-within{
-    appearance: none;
-  }
-    .checkmark:checked+.checkbox-icon {
-      background-color:#4d5ae5;
-      
-      fill: #ffffff;
-      outline: none;
-      stroke: var(--white);
-      stroke-width: 0.2;}
-  .checkmark
-   .checkbox-label .checkmark:focus+.checkbox-icon,
-.checkbox-label .checkmark:checked:focus+.checkbox-icon {
-  
-  background-color:blue;
+}
+.checkmark:focus-within {
+  appearance: none;
+}
+.checkmark:checked + .checkbox-icon {
+  background-color: #4d5ae5;
+
+  fill: #ffffff;
+  outline: none;
+  stroke: var(--white);
+  stroke-width: 0.2;
+}
+.checkmark .checkbox-label .checkmark:focus + .checkbox-icon,
+.checkbox-label .checkmark:checked:focus + .checkbox-icon {
+  background-color: blue;
 }
 .checkbox-label .checkbox-icon {
   width: 16px;
@@ -679,7 +697,7 @@
   border: 1px solid;
   border-radius: 2px;
   color: #434455;
-    stroke:#fff;
+  stroke: #fff;
 }
 
 .privacy-policy {
@@ -749,13 +767,12 @@ textarea {
 .focus-within-input:focus-within {
   border: 2px solid #4d5ae5;
 }
-.focus-within-input,textarea{
+.focus-within-input,
+textarea {
   border: 1px solid;
   border-radius: 4px;
   border-color: var(--navy-blue-modal);
-  
 }
-
 
 .modal-form > textarea:focus-within {
   border: 2px solid #4d5ae5;
